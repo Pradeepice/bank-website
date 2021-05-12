@@ -1,0 +1,331 @@
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #ededff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.main-nav{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    padding: 48px 16px 64px;
+    background: #af7dff;
+    color: #fff;
+    background-image: linear-gradient(#af7dff,#7797fe,#af7dff);
+    vertical-align: top;
+    overflow: auto;
+}
+
+.main-nav h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-navbars{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 12px;
+}
+
+.main-navbar{
+    margin-bottom: 48px;
+    margin-left: 32px;
+    cursor: pointer;
+    padding: 8px 32px;
+}
+
+.main-navbar:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.main-navbar__icon{
+    margin-right: 20px;
+}
+.icon-align{
+    margin-right: 30px;
+    margin-left: 4px;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-section{
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    padding: 20px;
+    background-color: #ededff;
+    height: 100%;
+    overflow: auto;
+}
+
+.main-section__header{
+    margin-bottom: 30px;
+    padding: 0px 20px;
+}
+
+.main-section__header h2{
+    display: inline-block;
+}
+
+.header-icon{
+    float: right;
+    margin-top: 20px;
+}
+
+.bell-icon{
+    margin-right: 100px;
+}
+
+.section-items{
+    float: left;
+    width: calc(100% - 350px);
+    padding: 0px 30px;
+}
+
+.section-items__balance{
+    background-image: linear-gradient(to right,#7797fe,#af7dff);
+    padding: 16px 32px;
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.section-graphs__left{
+    width: 48%;
+    float: left;
+    margin-right: 10px;
+}
+
+.section-graphs__right{
+    width: 48%;
+    float: right;
+}
+
+.section-graphs__analystics{
+    display: inline-block;
+    min-width: 270px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.section-graphs__analystics .graphs-diagram{
+    text-align: center;
+}
+
+.graph-bars{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.graph-bar{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.graph-blue-line,.graph-violet-line{
+    display: block;
+    height: 25px;
+    width: 5px;
+    border-radius: 20px;
+    background: #7797fe;
+    margin: 5px 0px;
+}
+
+.graph-violet-line{
+    background: violet;
+}
+
+.days{
+    margin-right: 4px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.section-graphs__counts{
+    display: inline-block;
+    min-width: 270px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.section-graphs__withdraw{
+    display: inline-block;
+    min-width: 270px;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px 24px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.section-graphs__withdraw button,.section-profile__details button{
+    color: #759bff;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #b3c9ff;
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.section-graphs__stats{
+    display: inline-block;
+    min-width: 270px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.graph-circle__details{
+    float: left;
+}
+
+.payment-box,.transfer-box{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: violet;
+}
+
+.transfer-box{
+    background: rgb(93, 93, 226);
+}
+
+
+.graph-circle{
+    width: 100px;
+    height: 100px;
+    border: 20px solid violet;
+    border-right: 20px solid rgb(93, 93, 226);
+    border-radius: 50%;
+    float: right;
+    transform: rotate(45deg);
+    margin-right: 16px;
+}
+
+.graphs-header h2{
+    display: inline-block;
+}
+
+.last-week{
+    margin-top: 16px;
+    float: right;
+}
+
+.last-week__down-arrow{
+    vertical-align: super;
+}
+
+.section-profile{
+    float: right;
+    width: 350px;
+    padding: 16px 48px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.section-profile__details{
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.section-profile__details img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0px auto;
+}
+
+.edit-pen{
+    border: 1px solid #b3c9ff;
+    padding: 6px 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.section-profile__details button{
+    margin-bottom: 30px;
+}
+
+.bank-transfer__details,.mobile-banking__details,.e-payment__details{
+    display: inline-block;
+}
+
+.view-detail{
+    color: #759bff;
+}
+
+.transfer-date{
+    float: right;
+    opacity: 0.4;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1300px){
+
+    .main-section{
+        width: 100%;
+        margin-left: 0px;
+        padding: 20px;
+        background-color: #ededff;
+        height: auto;
+    }
+
+    .main-nav{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 975px){
+
+    .section-profile{
+        display: none;
+    }
+
+    .header-icon{
+        display: none;
+    }
+
+    .section-items{
+        width: 100%;
+        margin-right: 0px;
+        padding: 0px;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    .section-graphs__left,.section-graphs__right{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .main-section{
+        padding: 16px;
+    }
+}
+
